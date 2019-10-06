@@ -9,6 +9,14 @@ services:
       - "6888:8080"
     volumes:
       - ./rclone:/root/.config/rclone
+      - ./data:/aria2/downloads
     environment:
       - SECRET=hello
+    restart: unless-stopped
+  filebrowser:
+    image: filebrowser/filebrowser
+    ports:
+      - "80:80"
+    volumes:
+      - /aria2/downloads:/srv
     restart: unless-stopped
