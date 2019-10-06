@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  filebrowser:
+    image: johnshh/aria2-rclone
+    ports:
+      - "6800:6800"
+      - "6880:80"
+      - "6888:8080"
+    volumes:
+      - ./rclone:/root/.config/rclone
+    environment:
+      - SECRET=hello
+    restart: unless-stopped
