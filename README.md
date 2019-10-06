@@ -12,4 +12,6 @@ RUN aria2 + ariang + filebrowser
 docker-compose up -d
 ```
 
+1. AriaNg:  http://<ip>:6880
+2. filebrowser:  http://<ip> login with admin admin
 
