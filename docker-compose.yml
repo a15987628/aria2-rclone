@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  filebrowser:
+  aria2-rclone:
     image: johnshh/aria2-rclone
     ports:
       - "6800:6800"
