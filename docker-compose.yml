@@ -17,5 +17,5 @@ services:
     ports:
       - "80:80"
     volumes:
-      - /aria2/downloads:/srv
+      - ./data:/srv
     restart: unless-stopped
